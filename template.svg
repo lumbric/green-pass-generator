@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="out.svg">
+   sodipodi:docname="template.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="139.33169"
-     inkscape:cy="35.745097"
+     inkscape:zoom="3.959798"
+     inkscape:cx="177.01212"
+     inkscape:cy="110.30129"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -64,28 +64,6 @@
        x="0"
        y="243.02002"
        ry="3.3080552" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.0801233"
-       x="53.461823"
-       y="272.01443"
-       id="text817"><tspan
-         sodipodi:role="line"
-         id="tspan815"
-         x="53.461823"
-         y="272.01443"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#eaeaea;fill-opacity:1;stroke-width:0.0801233">FIRST_NAME LAST_NAME</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.0801233"
-       x="53.502129"
-       y="280.12646"
-       id="text817-3"><tspan
-         sodipodi:role="line"
-         id="tspan815-6"
-         x="53.502129"
-         y="280.12646"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#eaeaea;fill-opacity:1;stroke-width:0.0801233">DATE_OF_BIRTH</tspan></text>
     <rect
        id="rect10938-3"
        style="fill:#ffffff;stroke:none;stroke-width:0.21886584"
@@ -94,65 +72,116 @@
        y="245.41698"
        x="2.0045216"
        ry="3.0067821" />
+    <g
+       id="g57"
+       transform="translate(-7.5879507e-7,-0.95016639)">
+      <text
+         id="text817"
+         y="272.01443"
+         x="53.406269"
+         style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.0801233"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#eaeaea;fill-opacity:1;stroke-width:0.0801233"
+           y="272.01443"
+           x="53.406269"
+           id="tspan815"
+           sodipodi:role="line">FIRST_NAME</tspan><tspan
+           id="tspan26"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#eaeaea;fill-opacity:1;stroke-width:0.0801233"
+           y="275.98318"
+           x="53.406269"
+           sodipodi:role="line">LAST_NAME</tspan></text>
+      <text
+         id="text817-7"
+         y="268.56967"
+         x="53.489986"
+         style="font-style:normal;font-weight:normal;font-size:2.11666656px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.0801233"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#eaeaea;fill-opacity:1;stroke-width:0.0801233"
+           y="268.56967"
+           x="53.489986"
+           id="tspan815-5"
+           sodipodi:role="line">Full name</tspan></text>
+    </g>
+    <g
+       id="g50"
+       transform="translate(-7.5879507e-7,-0.01254157)">
+      <text
+         id="text817-3"
+         y="285.41821"
+         x="53.406269"
+         style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.0801233"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#eaeaea;fill-opacity:1;stroke-width:0.0801233"
+           y="285.41821"
+           x="53.406269"
+           id="tspan815-6"
+           sodipodi:role="line">DATE_OF_BIRTH</tspan></text>
+      <text
+         id="text817-7-3"
+         y="281.97345"
+         x="53.489986"
+         style="font-style:normal;font-weight:normal;font-size:2.11666656px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.0801233"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#eaeaea;fill-opacity:1;stroke-width:0.0801233"
+           y="281.97345"
+           x="53.489986"
+           id="tspan815-5-5"
+           sodipodi:role="line">Date of birth</tspan></text>
+    </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.11666656px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.0801233"
-       x="53.54554"
-       y="268.2998"
-       id="text817-7"><tspan
-         sodipodi:role="line"
-         id="tspan815-5"
-         x="53.54554"
-         y="268.2998"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#eaeaea;fill-opacity:1;stroke-width:0.0801233">Name / Full name</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.11666656px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.0801233"
-       x="53.634422"
-       y="276.81705"
-       id="text817-7-3"><tspan
-         sodipodi:role="line"
-         id="tspan815-5-5"
-         x="53.634422"
-         y="276.81705"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#eaeaea;fill-opacity:1;stroke-width:0.0801233">Geburtsdatum / Date of birth</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.17499995px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.0801233"
-       x="53.737774"
-       y="255.75362"
+       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.0801233"
+       x="53.68222"
+       y="251.52034"
        id="text817-6"><tspan
          sodipodi:role="line"
          id="tspan815-2"
-         x="53.737774"
-         y="255.75362"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#eaeaea;fill-opacity:1;stroke-width:0.0801233">Vaccinated</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.64583325px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.0801233"
-       x="53.454845"
-       y="259.47476"
-       id="text817-6-9"><tspan
-         sodipodi:role="line"
-         id="tspan815-2-1"
-         x="53.454845"
-         y="259.47476"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#eaeaea;fill-opacity:1;stroke-width:0.0801233">DATE_OF_VACCINATION</tspan></text>
+         x="53.68222"
+         y="251.52034"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611107px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#eaeaea;fill-opacity:1;stroke-width:0.0801233">Vaccinated</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot14543"
        style="font-style:normal;font-weight:normal;font-size:6.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,-0.78137699,247.34782)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,-0.84985079,248.85973)"><flowRegion
          id="flowRegion14545"
          style="fill:#ffffff"><rect
            id="rect14547"
-           width="114.28571"
-           height="40"
+           width="157.04791"
+           height="27.214441"
            x="205.71428"
            y="157.23317"
            style="fill:#ffffff" /></flowRegion><flowPara
-         id="flowPara14551">Nur in Verbindung mit einem amtlichen Lichtbildausweis gültig.</flowPara></flowRoot>    <g
+         id="flowPara14551"
+         style="font-size:8px">Only valid with official photo identification.</flowPara></flowRoot>    <g
        id="g14534"
        transform="matrix(0.12797331,0,0,0.12797331,3.4968143,246.90927)">QR_CODE</g>
+    <g
+       id="g63"
+       transform="translate(-1.2645032e-6,1.34165)">
+      <text
+         id="text817-6-9"
+         y="259.47476"
+         x="53.454845"
+         style="font-style:normal;font-weight:normal;font-size:2.64583325px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.0801233"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#eaeaea;fill-opacity:1;stroke-width:0.0801233"
+           y="259.47476"
+           x="53.454845"
+           id="tspan815-2-1"
+           sodipodi:role="line">DATE_OF_VACCINATION</tspan></text>
+      <text
+         id="text817-7-36"
+         y="256.42273"
+         x="53.489986"
+         style="font-style:normal;font-weight:normal;font-size:2.11666656px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.0801233"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#eaeaea;fill-opacity:1;stroke-width:0.0801233"
+           y="256.42273"
+           x="53.489986"
+           id="tspan815-5-7"
+           sodipodi:role="line">Date of vaccination</tspan></text>
+    </g>
   </g>
 </svg>
