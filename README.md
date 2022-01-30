@@ -5,7 +5,7 @@ Green Pass Generator
 ====================
 
 Generates a beautiful credit card sized PDF file which contains your green pass, to prove your
-Covid-19 immun status.
+Covid-19 immune status.
 
 Install requirements:
 
@@ -14,7 +14,7 @@ Install requirements:
 
 Then run the script, passing a picture which contains the QR code of your vaccination certificate:
 
-    python green-pass-generator.py INPUT_IMAGE_WITH_QR_CODE
+    python green-pass-generator.py -i INPUT_IMAGE_WITH_QR_CODE
 
 
 Note that this is a very early version. It might work or it might not work. Some caveats include:
