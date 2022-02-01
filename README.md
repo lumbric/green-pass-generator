@@ -9,6 +9,7 @@ Covid-19 immune status.
 
 Install requirements:
 
+    apt install inkscape
     pip install pyzbar base45 cryptography==2.8 cose cbor2 qrcode pillow
 
 
