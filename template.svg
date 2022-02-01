@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="177.01212"
-     inkscape:cy="110.30129"
+     inkscape:zoom="1.979899"
+     inkscape:cx="288.71399"
+     inkscape:cy="55.862019"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -38,7 +38,9 @@
      inkscape:window-x="0"
      inkscape:window-y="29"
      inkscape:window-maximized="1"
-     showguides="false" />
+     showguides="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -69,12 +71,12 @@
        style="fill:#ffffff;stroke:none;stroke-width:0.21886584"
        height="49.901413"
        width="49.901413"
-       y="245.41698"
+       y="245.0593"
        x="2.0045216"
        ry="3.0067821" />
     <g
        id="g57"
-       transform="translate(-7.5879507e-7,-0.95016639)">
+       transform="translate(-2.4883406e-6,3.5477493)">
       <text
          id="text817"
          y="272.01443"
@@ -105,7 +107,7 @@
     </g>
     <g
        id="g50"
-       transform="translate(-7.5879507e-7,-0.01254157)">
+       transform="translate(-2.4883406e-6,2.1041252)">
       <text
          id="text817-3"
          y="285.41821"
@@ -131,20 +133,20 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.0801233"
-       x="53.68222"
-       y="251.52034"
+       style="font-style:normal;font-weight:normal;font-size:3.05896258px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.05789627"
+       x="53.681538"
+       y="260.25613"
        id="text817-6"><tspan
          sodipodi:role="line"
          id="tspan815-2"
-         x="53.68222"
-         y="251.52034"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.58611107px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#eaeaea;fill-opacity:1;stroke-width:0.0801233">Vaccinated</tspan></text>
+         x="53.681538"
+         y="260.25613"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.31387639px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#eaeaea;fill-opacity:1;stroke-width:0.05789627">Vaccinated</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot14543"
        style="font-style:normal;font-weight:normal;font-size:6.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,-0.84985079,248.85973)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,-0.84985252,248.81107)"><flowRegion
          id="flowRegion14545"
          style="fill:#ffffff"><rect
            id="rect14547"
@@ -159,7 +161,7 @@
        transform="matrix(0.12797331,0,0,0.12797331,3.4968143,246.90927)">QR_CODE</g>
     <g
        id="g63"
-       transform="translate(-1.2645032e-6,1.34165)">
+       transform="translate(-2.9883406e-6,8.2208167)">
       <text
          id="text817-6-9"
          y="259.47476"
@@ -183,5 +185,37 @@
            id="tspan815-5-7"
            sodipodi:role="line">Date of vaccination</tspan></text>
     </g>
+    <g
+       id="g951"
+       transform="matrix(1.1427654,0,0,1.1427654,-33.063131,-65.071547)">
+      <path
+         d="m 78.927734,277.66211 -0.01172,0.0117 -1.074219,1.07422 0.332031,-0.0605 0.888672,-0.89062 z m 0.777344,-1.5918 a 0.08220673,0.08220673 0 0 0 -0.04883,0.14063 l 0.324219,0.32617 a 0.08286478,0.08286478 0 1 0 0.117187,-0.11719 l -0.326172,-0.32422 a 0.08220673,0.08220673 0 0 0 -0.06641,-0.0254 z m -0.298828,0.29102 a 0.08220673,0.08220673 0 0 0 -0.04102,0.14062 l 0.326172,0.32617 a 0.08220673,0.08220673 0 1 0 0.115235,-0.11718 l -0.326172,-0.32617 a 0.08220673,0.08220673 0 0 0 -0.07422,-0.0234 z m 0.587891,-0.58203 a 0.08220673,0.08220673 0 0 0 -0.04883,0.14062 l 0.326172,0.32617 a 0.08220673,0.08220673 0 1 0 0.117188,-0.11523 L 80.0625,275.80469 a 0.08220673,0.08220673 0 0 0 -0.06836,-0.0254 z m 0.589843,-0.58203 a 0.08220673,0.08220673 0 0 0 -0.05664,0.14257 l 0.326172,0.32422 a 0.08220673,0.08220673 0 1 0 0.115234,-0.11523 l -0.324219,-0.32617 a 0.08220673,0.08220673 0 0 0 -0.06055,-0.0254 z m -0.298828,0.29101 a 0.08220673,0.08220673 0 0 0 -0.04883,0.14258 l 0.326172,0.32422 a 0.08220673,0.08220673 0 1 0 0.115234,-0.11524 l -0.324218,-0.32617 a 0.08220673,0.08220673 0 0 0 -0.06836,-0.0254 z m 0.582032,-0.58008 a 0.08220673,0.08220673 0 0 0 -0.04883,0.14063 l 0.326172,0.32617 a 0.08220673,0.08220673 0 1 0 0.115235,-0.11719 l -0.326172,-0.32617 a 0.08220673,0.08220673 0 0 0 -0.06641,-0.0234 z m 1.05664,-1.80078 a 0.14915673,0.14915673 0 0 0 -0.103516,0.25586 l 1.541016,1.54102 a 0.14915673,0.14915673 0 1 0 0.210938,-0.21094 l -1.541016,-1.54102 a 0.14915673,0.14915673 0 0 0 -0.107422,-0.0449 z m -1.166016,0.80469 a 0.16441115,0.16441115 0 0 0 -0.09766,0.28125 l 1.871094,1.87109 a 0.16441115,0.16441115 0 1 0 0.232422,-0.23242 l -1.871094,-1.87109 a 0.16441115,0.16441115 0 0 0 -0.134766,-0.0488 z m 1.625,-0.26563 a 0.09719549,0.09719549 0 0 0 -0.05664,0.0274 l -1.019531,1.01953 a 0.09719549,0.09719549 0 0 0 0,0.13867 l 0.58789,0.58594 a 0.09719549,0.09719549 0 0 0 0.136719,0 l 1.019531,-1.01758 a 0.09719549,0.09719549 0 0 0 0,-0.13867 l -0.58789,-0.58789 a 0.09719549,0.09719549 0 0 0 -0.08008,-0.0274 z m 0.01172,0.23438 0.449219,0.44922 -0.880859,0.88281 -0.451172,-0.45117 z m -1.144532,0.5957 -0.07227,0.0703 -2.457031,2.42773 0.119141,0.89453 0.880859,0.13477 2.527344,-2.49805 z m -0.0039,0.28125 0.724609,0.7461 -2.318359,2.29101 -0.636719,-0.0976 -0.08594,-0.65039 z"
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#eaeaea;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.02319829;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         id="path3872"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 85.078445,276.05057 a 4.476316,4.476316 0 0 1 -4.459529,4.4923 4.476316,4.476316 0 0 1 -4.49304,-4.45878 4.476316,4.476316 0 0 1 4.458039,-4.49378 4.476316,4.476316 0 0 1 4.494518,4.45729"
+         sodipodi:open="true"
+         sodipodi:end="6.2789442"
+         sodipodi:start="6.2796074"
+         sodipodi:ry="4.476316"
+         sodipodi:rx="4.476316"
+         sodipodi:cy="276.06659"
+         sodipodi:cx="80.602158"
+         sodipodi:type="arc"
+         id="path63"
+         style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#eaeaea;stroke-width:0.40799999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.63043928px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#eaeaea;fill-opacity:1;stroke:none;stroke-width:0.10656602"
+       x="69.778908"
+       y="251.95207"
+       id="text817-6-6"><tspan
+         sodipodi:role="line"
+         id="tspan815-2-7"
+         x="69.778908"
+         y="251.95207"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.09964275px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#eaeaea;fill-opacity:1;stroke-width:0.10656602">DOSE_NUMBER/NO_OF_DOSES</tspan></text>
   </g>
 </svg>

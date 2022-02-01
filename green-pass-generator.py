@@ -76,11 +76,16 @@ def generate_green_pass(input_fname, output_fname, output_dir):
 
     # FIXME check if this does actually work for all certificates
     name = certificate[-260][1]["nam"]
+    vaccinations = certificate[-260][1]["v"]
+    assert len(vaccinations) == 1, "unexpected number of vaccination entries" # not supported yet
+    vaccination = certificate[-260][1]["v"][0]
     replacements = {
         "FIRST_NAME": name["gn"],
         "LAST_NAME": name["fn"],
         "DATE_OF_BIRTH": certificate[-260][1]["dob"],
-        "DATE_OF_VACCINATION": certificate[-260][1]["v"][0]["dt"],
+        "DATE_OF_VACCINATION": vaccination["dt"],
+        "NO_OF_DOSES": str(vaccination["sd"]),
+        "DOSE_NUMBER": str(vaccination["dn"]),
         "QR_CODE": str(generate_certificate(certificate_encoded).to_string()),
     }
 
