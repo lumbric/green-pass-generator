@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# some non-public files
+garbage/
+input/
+output/
+tests.py
+notes.md
