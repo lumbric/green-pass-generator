@@ -86,7 +86,7 @@ def generate_green_pass(input_fname, output_fname, output_dir):
         "DATE_OF_VACCINATION": vaccination["dt"],
         "NO_OF_DOSES": str(vaccination["sd"]),
         "DOSE_NUMBER": str(vaccination["dn"]),
-        "QR_CODE": str(generate_certificate(certificate_encoded).to_string()),
+        "QR_CODE": generate_certificate(certificate_encoded).to_string().decode(),
     }
 
     # FIXME check for possible security issues
