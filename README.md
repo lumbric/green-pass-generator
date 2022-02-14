@@ -7,6 +7,10 @@ Green Pass Generator
 Generates a beautiful credit card sized PDF file which contains your green pass, to prove your
 Covid-19 immune status.
 
+
+![Example Green Pass](example.png)
+
+
 Install requirements:
 
     apt install inkscape
