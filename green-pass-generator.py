@@ -1,7 +1,7 @@
-import sys
 import zlib
 import base45
 import cbor2
+import string
 import argparse
 import subprocess
 import qrcode.image.svg
@@ -94,7 +94,13 @@ def generate_green_pass(input_fname, output_fname, output_dir):
         green_pass_svg = green_pass_svg.replace(pattern, substitute)
 
     if output_fname is None:
-        output_fname = f"greenpass-{name['gnt'].lower()}-{name['fnt'].lower()}"
+        def filter_name(name):
+            return ''.join(char for char in name.lower() if char in string.ascii_lowercase)
+
+        first_name = filter_name(name['gnt'])
+        last_name = filter_name(name['fnt'])
+
+        output_fname = f"greenpass-{first_name}-{last_name}"
 
     output_path = Path(output_dir) / output_fname
     output_path_svg = f"{output_path}.svg"
