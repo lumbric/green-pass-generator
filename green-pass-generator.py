@@ -70,6 +70,8 @@ def parse_certificate(certificate_encoded):
 
 
 def generate_green_pass(input_fname, output_fname, output_dir):
+    print(f"Generating green pass for {input_fname}...")
+
     with open("template.svg", "r") as f:
         green_pass_svg = f.read()
 
@@ -83,6 +85,9 @@ def generate_green_pass(input_fname, output_fname, output_dir):
 
     # not really checked if this is the right way to go, but it seems to work
     qr_scaling_factor = QR_CODE_DEFAULT_WIDTH / qr_code_svg.width
+
+    print("QR Code width:", qr_code_svg.width)
+    print("QR Code size:",  qr_code_svg.pixel_size / qr_code_svg.box_size)
 
     # FIXME check if this does actually work for all certificates
     name = certificate[-260][1]["nam"]
