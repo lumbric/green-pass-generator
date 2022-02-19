@@ -156,9 +156,12 @@
            y="157.23317"
            style="fill:#ffffff" /></flowRegion><flowPara
          id="flowPara14551"
-         style="font-size:8px">Only valid with official photo identification.</flowPara></flowRoot>    <g
-       id="g14534"
-       transform="matrix(0.12797331,0,0,0.12797331,3.4968143,246.90927)">QR_CODE</g>
+         style="font-size:8px">Only valid with official photo identification.</flowPara></flowRoot>
+         <g id="g14534" transform="matrix(0.12797331,0,0,0.12797331,3.4968143,246.90927)">
+         <g id="qr_scaling_factor" transform="QR_SCALING_FACTOR">
+         QR_CODE
+         </g>
+         </g>
     <g
        id="g63"
        transform="translate(-2.9883406e-6,8.2208167)">

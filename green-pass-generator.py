@@ -14,6 +14,11 @@ from pyzbar.pyzbar import ZBarSymbol
 from cose.messages import CoseMessage
 
 
+# this is the width of the QR code in the template, if the generated QR code is larger or smaller
+# it needs to be scaled
+QR_CODE_DEFAULT_WIDTH = 89
+
+
 def scan_certificate(fname):
     # # # using qrtools:
     # import qrtools
@@ -74,6 +79,11 @@ def generate_green_pass(input_fname, output_fname, output_dir):
 
     pprint(certificate)
 
+    qr_code_svg = generate_certificate(certificate_encoded)
+
+    # not really checked if this is the right way to go, but it seems to work
+    qr_scaling_factor = QR_CODE_DEFAULT_WIDTH / qr_code_svg.width
+
     # FIXME check if this does actually work for all certificates
     name = certificate[-260][1]["nam"]
     vaccinations = certificate[-260][1]["v"]
@@ -86,7 +96,8 @@ def generate_green_pass(input_fname, output_fname, output_dir):
         "DATE_OF_VACCINATION": vaccination["dt"],
         "NO_OF_DOSES": str(vaccination["sd"]),
         "DOSE_NUMBER": str(vaccination["dn"]),
-        "QR_CODE": generate_certificate(certificate_encoded).to_string().decode(),
+        "QR_CODE": qr_code_svg.to_string().decode(),
+        "QR_SCALING_FACTOR": f"scale({qr_scaling_factor} {qr_scaling_factor})",
     }
 
     # FIXME check for possible security issues
