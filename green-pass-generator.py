@@ -18,6 +18,9 @@ from cose.messages import CoseMessage
 # it needs to be scaled
 QR_CODE_DEFAULT_WIDTH = 89
 
+# we need to shrink font size as ugly hack to make long names (but not too long) fit on the layout
+MAX_NAME_SIZE = 15
+
 
 def scan_certificate(fname):
     # # # using qrtools:
@@ -104,6 +107,10 @@ def generate_green_pass(input_fname, output_fname, output_dir):
         "QR_CODE": qr_code_svg.to_string().decode(),
         "QR_SCALING_FACTOR": f"scale({qr_scaling_factor} {qr_scaling_factor})",
     }
+
+    if len(name["fn"]) > MAX_NAME_SIZE or len(name["gn"]) > MAX_NAME_SIZE:
+        replacements["font-size:3.17499995px"] = "font-size:2.1px"
+
     # FIXME check for possible security issues
     for pattern, substitute in replacements.items():
         green_pass_svg = green_pass_svg.replace(pattern, substitute)
