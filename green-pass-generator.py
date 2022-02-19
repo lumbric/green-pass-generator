@@ -87,12 +87,12 @@ def generate_green_pass(input_fname, output_fname, output_dir):
     qr_scaling_factor = QR_CODE_DEFAULT_WIDTH / qr_code_svg.width
 
     print("QR Code width:", qr_code_svg.width)
-    print("QR Code size:",  qr_code_svg.pixel_size / qr_code_svg.box_size)
+    print("QR Code size:", qr_code_svg.pixel_size / qr_code_svg.box_size)
 
     # FIXME check if this does actually work for all certificates
     name = certificate[-260][1]["nam"]
     vaccinations = certificate[-260][1]["v"]
-    assert len(vaccinations) == 1, "unexpected number of vaccination entries" # not supported yet
+    assert len(vaccinations) == 1, "unexpected number of vaccination entries"  # not supported yet
     vaccination = certificate[-260][1]["v"][0]
     replacements = {
         "FIRST_NAME": name["gn"],
@@ -104,17 +104,17 @@ def generate_green_pass(input_fname, output_fname, output_dir):
         "QR_CODE": qr_code_svg.to_string().decode(),
         "QR_SCALING_FACTOR": f"scale({qr_scaling_factor} {qr_scaling_factor})",
     }
-
     # FIXME check for possible security issues
     for pattern, substitute in replacements.items():
         green_pass_svg = green_pass_svg.replace(pattern, substitute)
 
     if output_fname is None:
-        def filter_name(name):
-            return ''.join(char for char in name.lower() if char in string.ascii_lowercase)
 
-        first_name = filter_name(name['gnt'])
-        last_name = filter_name(name['fnt'])
+        def filter_name(name):
+            return "".join(char for char in name.lower() if char in string.ascii_lowercase)
+
+        first_name = filter_name(name["gnt"])
+        last_name = filter_name(name["fnt"])
 
         output_fname = f"greenpass-{first_name}-{last_name}"
 
