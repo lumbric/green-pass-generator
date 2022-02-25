@@ -132,6 +132,6 @@ dmypy.json
 # some non-public files
 garbage/
 input/
-output/
+output*
 tests.py
 notes.md
