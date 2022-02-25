@@ -27,15 +27,18 @@ jobs:
     - name: Generate green pass for Gabriele Musterfrau
       run: ./green-pass-generator -o output-test-file -i input/gabriele-musterfraugoessinger.png
 
-    - name: Compare file to the one in the repository to file
+    - name: Check if output files exist
       run: |
-        diff output-test-file.svg output/greenpass-gabriele-musterfraugoessinger.svg
-        ls output-test-file.pdf  # PDFs are not identical, only check if existing
+        # files are not reproducible unfortunately, check only if existing
+        ls output-test-file.svg
+        ls output-test-file.pdf
+        ls output-test-file.png
 
     - name: Generate green pass for Gabriele Musterfrau to folder
       run: |
         mkdir output-test
         ./green-pass-generator -O output-test -i input/gabriele-musterfraugoessinger.png
+        # files are not reproducible unfortunately, check only if existing
         ls output-test/greenpass-gabriele-musterfraugoessinger.svg
         ls output-test/greenpass-gabriele-musterfraugoessinger.png
         ls output-test/greenpass-gabriele-musterfraugoessinger.pdf
