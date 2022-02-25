@@ -19,7 +19,7 @@ Install requirements:
 
 Then run the script, passing a picture which contains the QR code of your vaccination certificate:
 
-    python green-pass-generator.py -i INPUT_IMAGE_WITH_QR_CODE
+    ./green-pass-generator -i INPUT_IMAGE_WITH_QR_CODE
 
 
 Note that this is a very early version. It might work or it might not work. Some caveats include:
