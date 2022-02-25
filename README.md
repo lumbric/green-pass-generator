@@ -8,7 +8,7 @@ Generates a beautiful credit card sized PDF file which contains your green pass,
 Covid-19 immune status.
 
 
-![Example Green Pass](example.png)
+![Example Green Pass](output/greenpass-gabriele-musterfraugoessinger.png)
 
 
 Install requirements:
