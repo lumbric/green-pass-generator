@@ -1,4 +1,4 @@
-name: Tests
+name: Test runs
 
 on: [push, pull_request]
 
@@ -8,8 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.10"]
-        #python-version: [3.6, 3.7, 3.8, 3.9, "3.10"]
+        python-version: [3.6, 3.7, 3.8, 3.9, "3.10"]
 
     steps:
     - uses: actions/checkout@v2
@@ -25,14 +24,29 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run
-      run: ./green-pass-generator -O output -i input/gabriele-musterfraugoessinger.png
-
-    - name: Generate green pass
+    - name: Generate green pass for Gabriele Musterfrau
       run: ./green-pass-generator -o output-test-file -i input/gabriele-musterfraugoessinger.png
+
+    - name: Compare file to the one in the repository to file
+      run: |
+        diff output-test-file.svg output/greenpass-gabriele-musterfraugoessinger.svg
+        ls output-test-file.pdf  # PDFs are not identical, only check if existing
+
+    - name: Generate green pass for Gabriele Musterfrau to folder
+      run: |
+        mkdir output-test
+        ./green-pass-generator -O output-test -i input/gabriele-musterfraugoessinger.png
+        ls output-test/greenpass-gabriele-musterfraugoessinger.svg
+        ls output-test/greenpass-gabriele-musterfraugoessinger.png
+        ls output-test/greenpass-gabriele-musterfraugoessinger.pdf
 
     - name: Install Inkscape
       run: sudo apt install inkscape
 
     - name: Run
       run: ./green-pass-generator -o output-test-file-inkscape -c inkscape -i input/gabriele-musterfraugoessinger.png
+
+    - name: Check if Inkscape output exists
+      run: |
+        ls output-test-file-inkscape.svg
+        ls output-test-file-inkscape.pdf
