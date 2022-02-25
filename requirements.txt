@@ -1,0 +1,8 @@
+pyzbar
+base45
+cryptography==2.8
+cose
+cbor2
+qrcode
+pillow
+cairosvg
