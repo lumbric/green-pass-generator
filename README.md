@@ -1,5 +1,4 @@
 [![MIT License](https://badgen.net/github/license/lumbric/green-pass-generator)](https://choosealicense.com/licenses/mit/)
-
 [![Test runs](https://github.com/lumbric/green-pass-generator/actions/workflows/tests.yml/badge.svg)](https://github.com/lumbric/green-pass-generator/actions/workflows/tests.yml)
 
 Green Pass Generator
@@ -82,9 +81,9 @@ Certificate specification:
  - [More instructions regarding the specification](https://www.gabriel.urdhr.fr/2021/09/22/whats-in-my-covid-cert/))
 
 Similar projects:
- - https://immunkarte.de/
- - https://factoryprint.it/tag-prodotto/green-pass/
- - https://www.seceservizi.com/prodotto/stampa-green-pass/
- - https://www.point20.it/negozio/green-pass-personalizzato-su-card-in-pvc-con-qr-code-dimensione-biglietto-da-visita/
- - https://www.fadoadv.it/negozio/Green-Pass-Card-Personalizzata-p394810909
- - https://www.personal-tech.it/it/id-card/9486-id-card-personalizzate.html
+ - [Immunkarte](https://immunkarte.de/])
+ - [Green pass Card](https://factoryprint.it/tag-prodotto/green-pass/)
+ - [Stampa green pass su card in PVC](https://www.seceservizi.com/prodotto/stampa-green-pass/)
+ - [Green Pass Card Covid 19](https://www.personal-tech.it/it/id-card/9486-id-card-personalizzate.html)
+ - [Green Pass - Card Personalizzata](https://www.fadoadv.it/negozio/Green-Pass-Card-Personalizzata-p394810909)
+ - [Green Pass Personalizzato](https://www.point20.it/negozio/green-pass-personalizzato-su-card-in-pvc-con-qr-code-dimensione-biglietto-da-visita/)
