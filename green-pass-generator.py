@@ -72,7 +72,7 @@ def parse_certificate(certificate_encoded):
     return out
 
 
-def generate_green_pass(input_fname, output_fname, output_dir):
+def generate_green_pass(input_fname, output_fname, output_dir, svg_converter):
     print(f"Generating green pass for {input_fname}...")
 
     with open("template.svg", "r") as f:
@@ -128,11 +128,23 @@ def generate_green_pass(input_fname, output_fname, output_dir):
     output_path = Path(output_dir) / output_fname
     output_path_svg = f"{output_path}.svg"
     output_path_pdf = f"{output_path}.pdf"
+    output_path_png = f"{output_path}.png"
 
     with open(output_path_svg, "w") as f:
         f.write(green_pass_svg)
 
-    subprocess.run(["inkscape", "--export-pdf", output_path_pdf, output_path_svg], check=True)
+    if svg_converter == "cairosvg":
+        import cairosvg
+
+        # FIXME there are weird effects of the PNG scaling factor, this value seems to produce
+        # reasonable well looking results, while other values completely destroy the background.
+        # Luckily 2.8 is also a good value regarding the output resolution of the file.
+        cairosvg.svg2png(url=output_path_svg, write_to=output_path_png, scale=2.8)
+        cairosvg.svg2pdf(url=output_path_svg, write_to=output_path_pdf)
+    elif svg_converter == "inkscape":
+        subprocess.run(["inkscape", "--export-pdf", output_path_pdf, output_path_svg], check=True)
+    else:
+        raise ValueError(f"SVG converter '{svg_converter}' not supported")
 
 
 def main():
@@ -156,12 +168,25 @@ def main():
         ),
     )
     parser.add_argument("-O", "--output-dir", default=".", help="Output files are stored here.")
+
+    parser.add_argument(
+        "-c",
+        "--svg-converter",
+        default="cairosvg",
+        choices=["inkscape", "cairosvg"],
+        help=(
+            "Library or program used to convert SVG to PDF/PNG. At the moment, PNG export is "
+            "supported only by CairoSVG."
+        ),
+    )
+
     args = parser.parse_args()
 
     generate_green_pass(
         input_fname=args.input,
         output_fname=args.output,
         output_dir=args.output_dir,
+        svg_converter=args.svg_converter,
     )
 
 
