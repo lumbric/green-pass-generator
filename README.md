@@ -76,9 +76,8 @@ Links
 Certificate specification:
  - [Electronic Health Certificate Specification](https://github.com/ehn-dcc-development/hcert-spec/blob/main/hcert_spec.md)
  - [Invalid sample QR code](https://dgc.a-sit.at/ehn/)
- - [Script to generate an (invalid) QR code with arbitrary payload](https://github.com/ps1dr3x/greenpass-generator/)
  - [Instruction on hackernoon.com how to decode the Green Pass](https://hackernoon.com/how-to-decode-your-own-eu-vaccination-green-pass-with-a-few-lines-of-python-9v2c37s1)
- - [More instructions regarding the specification](https://www.gabriel.urdhr.fr/2021/09/22/whats-in-my-covid-cert/))
+ - [More instructions regarding the specification](https://www.gabriel.urdhr.fr/2021/09/22/whats-in-my-covid-cert/)
 
 Similar projects:
  - [Immunkarte](https://immunkarte.de/])
