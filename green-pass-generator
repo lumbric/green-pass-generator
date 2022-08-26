@@ -74,10 +74,15 @@ def parse_certificate(certificate_encoded):
     return out
 
 
-def generate_green_pass(input_fname, output_fname, output_dir, svg_converter):
+def generate_green_pass(input_fname, output_fname, output_dir, svg_converter, color_mode):
     print(f"Generating green pass for {input_fname}...")
 
-    with open("template.svg", "r") as f:
+    if color_mode is "color":
+        template_file = "template_c.svg"
+    else:
+        template_file = "template_bw.svg"
+
+    with open(template_file, "r") as f:
         green_pass_svg = f.read()
 
     certificate_encoded = scan_certificate(fname=input_fname)
@@ -183,6 +188,16 @@ def main():
         ),
     )
 
+    parser.add_argument(
+        "-m",
+        "--color-mode",
+        default="color",
+        choices=["color", "bw"],
+        help=(
+            "Choose if the output is for a color card printer or only black and white."
+        )
+    )
+
     args = parser.parse_args()
 
     generate_green_pass(
@@ -190,6 +205,7 @@ def main():
         output_fname=args.output,
         output_dir=args.output_dir,
         svg_converter=args.svg_converter,
+        color_mode=args.color_mode
     )
 
 
