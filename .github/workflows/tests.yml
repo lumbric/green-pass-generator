@@ -24,17 +24,27 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Generate green pass for Gabriele Musterfrau
+    - name: Generate green pass for Gabriele Musterfrau (color, default)
       run: ./green-pass-generator -o output-test-file -i input/gabriele-musterfraugoessinger.png
 
-    - name: Check if output files exist
+    - name: Check if output files exist (color, default)
       run: |
         # files are not reproducible unfortunately, check only if existing
         ls output-test-file.svg
         ls output-test-file.pdf
         ls output-test-file.png
 
-    - name: Generate green pass for Gabriele Musterfrau to folder
+    - name: Generate green pass for Gabriele Musterfrau (black/white)
+      run: ./green-pass-generator -m bw -o output-test-file-bw -i input/gabriele-musterfraugoessinger.png
+
+    - name: Check if output files exist (black/white)
+      run: |
+        # files are not reproducible unfortunately, check only if existing
+        ls output-test-file-bw.svg
+        ls output-test-file-bw.pdf
+        ls output-test-file-bw.png
+
+    - name: Generate green pass for Gabriele Musterfrau to folder (color, default)
       run: |
         mkdir output-test
         ./green-pass-generator -O output-test -i input/gabriele-musterfraugoessinger.png
@@ -42,6 +52,15 @@ jobs:
         ls output-test/greenpass-gabriele-musterfraugoessinger.svg
         ls output-test/greenpass-gabriele-musterfraugoessinger.png
         ls output-test/greenpass-gabriele-musterfraugoessinger.pdf
+
+    - name: Generate green pass for Gabriele Musterfrau to folder (black/white)
+      run: |
+        mkdir output-test-bw
+        ./green-pass-generator -m bw -O output-test-bw -i input/gabriele-musterfraugoessinger.png
+        # files are not reproducible unfortunately, check only if existing
+        ls output-test-bw/greenpass-gabriele-musterfraugoessinger.svg
+        ls output-test-bw/greenpass-gabriele-musterfraugoessinger.png
+        ls output-test-bw/greenpass-gabriele-musterfraugoessinger.pdf
 
     - name: Install Inkscape
       run: sudo apt install inkscape
