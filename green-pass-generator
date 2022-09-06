@@ -77,9 +77,8 @@ def parse_certificate(certificate_encoded):
 def generate_green_pass(input_fname, output_fname, output_dir, svg_converter, color_mode):
     print(f"Generating green pass for {input_fname}...")
 
-    if color_mode == "color":
-        template_file = "template_c.svg"
-    else:
+    template_file = "template_c.svg"
+    if color_mode == "bw":
         template_file = "template_bw.svg"
 
     with open(template_file, "r") as f:
