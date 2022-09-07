@@ -22,6 +22,8 @@ Then run the script, passing a picture which contains the QR code of your vaccin
 Other command line parameters allow to set the output file name and to choose the SVG convert, see
 output of `./green-pass-generator --help`.
 
+You can pass the paramater `-m bw` to use a black and white template, if you can only print monochrome cards.
+
 If you want to generate multiple green pass cards, put all input files in the folder `input` and
 run:
 
